@@ -4,7 +4,6 @@
     <update id="update" parameterType="Employee">
         UPDATE employee
         <set>
-            <trim suffixOverrides=",">
                 <if test="name != null">
                     name = #{name},
                 </if>
@@ -21,18 +20,17 @@
                     phone = #{phone},
                 </if>
                 <if test="idNumber != null">
-                    idNumber = #{idNumber},
+                    id = #{idNumber},
                 </if>
                 <if test="status != null">
                     status = #{status},
                 </if>
                 <if test="updateTime != null">
-                    updateTime = #{updateTime},
+                    update_time = #{updateTime},
                 </if>
                 <if test="updateUser != null">
-                    updateUser = #{updateUser}
+                    update_user = #{updateUser},
                 </if>
-            </trim>
         </set>
         WHERE id = #{id}
     </update>
