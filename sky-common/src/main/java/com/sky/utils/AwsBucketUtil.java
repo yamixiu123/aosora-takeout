@@ -12,7 +12,7 @@ import java.io.ByteArrayInputStream;
 @Data
 @AllArgsConstructor
 @Slf4j
-public class AliOssUtil {
+public class AwsBucketUtil {
 
     private String endpoint;
     private String accessKeyId;
