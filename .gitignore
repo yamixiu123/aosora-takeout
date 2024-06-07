@@ -4,4 +4,4 @@ src/main/resources/application.yml
 *.iml
 *.class
 *Test.java
-**/test/
+**/test/src/main/resources/application.yml
